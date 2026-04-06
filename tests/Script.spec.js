@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-test.only('MakeMyTrip',async({page})=>{
+test('MakeMyTrip',async({page})=>{
 
     await page.goto('https://www.makemytrip.global.com/?cc=in&redirectedBy=gl')
     await page.locator("//img[@alt='minimize']").click()

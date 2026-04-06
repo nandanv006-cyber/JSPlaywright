@@ -17,7 +17,7 @@ test("browser control",async({browser})=>{
     console.log(time1);
 
 })
-test.only('locators',async({browser})=>{
+test('locators',async({browser})=>{
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://practicetestautomation.com/practice-test-login/');
